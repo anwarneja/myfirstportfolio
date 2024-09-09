@@ -1,0 +1,29 @@
+.header {
+  background-color: aqua;
+  padding: 50px;
+  font-size: 50px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+.parent {
+  border: 45px red solid;
+  width: 290px;
+  height: 195px;
+  position: relative;
+}
+.child {
+  width: 145px;
+  height: 110px;
+  border: 20px yellow solid;
+  position: relative;
+  right: 0;
+  top: 42px;
+}
+.sticky {
+  position: sticky;
+  background-color: red;
+  padding: 20px;
+  top: 0;
+  width: 100%;
+}

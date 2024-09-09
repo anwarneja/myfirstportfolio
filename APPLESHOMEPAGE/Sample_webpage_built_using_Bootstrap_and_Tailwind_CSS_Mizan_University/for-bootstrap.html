@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizan University</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        /* Custom styles */
+        body{
+            background-image: url("image/background.jpg");
+            background-size: cover;
+            color: white;
+        }
+        p{
+            color: black;
+        }
+        .navbar-brand img {
+            height: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .navbar-brand img:hover {
+            transform: rotate(10deg);
+        }
+        .hero {
+            background-image: url('image/hero.jfif');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+     <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="image/MizanLogo.jpg" alt="Mizan University Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#blogs">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-2 text-white" href="#apply">Apply Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container text-center">
+            <h1 class="display-4 animate-fade-in">Welcome to Mizan University</h1>
+            <p style="color: white;" class="lead animate-fade-in">Empowering minds, shaping futures</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="image/compus.jpg" alt="Campus" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-md-6">
+                    <p style="color: rgb(255, 255, 255);">Mizan University is a leading institution dedicated to providing quality education and fostering innovation. Our state-of-the-art facilities and expert faculty ensure that students receive the best possible education to prepare them for their future careers.</p>
+                    <p style="color: rgb(255, 255, 255);">Founded in 1990, we have a rich history of academic excellence and community engagement. Our mission is to empower students with knowledge, skills, and values that will enable them to make a positive impact on society.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5 bg-light">
+        <div class="container">
+            <h2 style="color: black;" class="text-center mb-4">Our Courses</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <img src="image/co-sci.jpg" class="card-img-top" alt="Computer Science">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer Science</h5>
+                            <p class="card-text">Explore the world of algorithms, programming, and cutting-edge technology.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <img src="image/business.jpg" class="card-img-top" alt="Business Administration">
+                        <div class="card-body">
+                            <h5 class="card-title">Business Administration</h5>
+                            <p class="card-text">Develop leadership skills and business acumen for the modern corporate world.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <img src="image/engineering.jpg" class="card-img-top" alt="Engineering">
+                        <div class="card-body">
+                            <h5 class="card-title">Engineering</h5>
+                            <p class="card-text">Innovate and design solutions to real-world problems through engineering.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-book fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Library</h5>
+                            <p class="card-text">Access to extensive academic resources and quiet study spaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-laptop fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Computer Labs</h5>
+                            <p class="card-text">State-of-the-art computer facilities for research and learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Career Services</h5>
+                            <p class="card-text">Guidance and support for your future career path.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5 bg-light">
+        <div class="container">
+            <h2 style="color: black;" class="text-center mb-4">Upcoming Events</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Annual Science Fair</h5>
+                            <p class="card-text">Join us for an exciting showcase of student projects and innovations.</p>
+                            <p><strong>Date:</strong> July 15, 2024</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Career Expo 2024</h5>
+                            <p class="card-text">Connect with potential employers and explore career opportunities.</p>
+                            <p><strong>Date:</strong> September 5-6, 2024</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Campus Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="image/campus/maxresdefault.jpg" alt="Campus 1" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="image/campus/download.jpg" alt="Campus 2" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="image/campus/images.jpg" alt="Campus 3" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="image/campus/campus-2.jpg" alt="Campus 1" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="image/campus/campus-3.jpg" alt="Campus 2" class="img-fluid rounded shadow-sm">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="image/campus/campus-4.jpg" alt="Campus 3" class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="py-5 bg-light">
+        <div class="container">
+            <h2 style="color: black;" class="text-center mb-4">Latest Blogs</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="image/campus/academic.jpg" class="card-img-top" alt="Blog 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Tips for Academic Success</h5>
+                            <p class="card-text">Discover effective strategies to excel in your studies and achieve your goals.</p>
+                            <a href="#" class="btn btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="image/campus/cutting-edge.jpg" class="card-img-top" alt="Blog 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Cutting-edge Research at Mizan</h5>
+                            <p class="card-text">Learn about the latest breakthroughs and innovations from our research teams.</p>
+                            <a href="#" class="btn btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="image/campus/alumini.jpg" class="card-img-top" alt="Blog 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Alumni Success Stories</h5>
+                            <p class="card-text">Get inspired by the achievements of our graduates in various fields.</p>
+                            <a href="#" class="btn btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Now Section -->
+    <section id="apply" class="py-5 bg-secondary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Join Us?</h2>
+            <p style="color: rgb(255, 255, 255);" class="lead mb-4">Take the first step towards your future. Apply now to Mizan University!</p>
+            <a href="#" class="btn btn-light btn-lg">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- SVG Section -->
+<section id="svgs" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center text-black mb-4">Understanding SVGs</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="text-black">What is SVG?</h4>
+                <p>SVG stands for Scalable Vector Graphics. It is an XML-based format for creating vector images, which are scalable to any size without losing quality. Unlike raster images (e.g., PNG, JPEG), SVGs are made up of shapes, lines, and paths defined by mathematical equations, making them ideal for responsive web design.</p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-black">How the <code>&lt;svg&gt;</code> Element Works</h4>
+                <p>The <code>&lt;svg&gt;</code> element is a container for SVG graphics. Inside this element, you can include various shapes, such as circles, rectangles, and paths, to create complex graphics directly within your HTML code.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h4 class="text-black">Using the <code>&lt;path&gt;</code> Element</h4>
+                <p>The <code>&lt;path&gt;</code> element is one of the most powerful elements in SVG. It defines a series of commands and coordinates that create complex shapes. Below is an example of how to create a simple heart shape using the <code>&lt;path&gt;</code> tag:</p>
+
+                <div class="text-center my-4">
+                    <svg width="200" height="200" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="red"/>
+                    </svg>
+                </div>
+
+                <p class="text-black">In the example above, the <code>&lt;path&gt;</code> element uses the <code>d</code> attribute to define the shape's coordinates and curves:</p>
+                <pre class="text-black"><code>&lt;path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="red"/&gt;</code></pre>
+
+                <p>Here's a breakdown of the <code>d</code> attribute:</p>
+                <ul>
+                    <li class="text-black"><strong>M12 21.35:</strong> Move to the point (12, 21.35).</li>
+                    <li class="text-black"><strong>l-1.45-1.32:</strong> Draw a line to the relative point (-1.45, -1.32).</li>
+                    <li class="text-black"><strong>C5.4 15.36 2 12.28 2 8.5:</strong> Draw a cubic Bézier curve with control points.</li>
+                    <li class="text-black"><strong>z:</strong> Close the path.</li>
+                </ul>
+
+                <p>By combining these commands, you can create complex shapes, logos, and icons with precision and scalability.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <div class="mb-3">
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-white me-3">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="text-white">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <p style="color: rgb(255, 255, 255);" class="mb-0">&copy; 2024 Mizan University. All rights reserved.</p>
+    </div>
+</footer>
+
+
+  <!--
+ <div class="row">
+    <div class="col-sm-6 col-md-4">Column 1</div>
+    <div class="col-sm-6 col-md-4">Column 2</div>
+    <div class="col-sm-12 col-md-4">Column 3</div>
+  </div>
+  <br><br><br><br><br>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>*/ -->
+
+<!-- Add Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

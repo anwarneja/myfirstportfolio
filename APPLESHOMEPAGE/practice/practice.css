@@ -1,0 +1,638 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:#0d0d0eec;
+    position: fixed;
+    padding-bottom: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    z-index: 9999;
+  
+    width: 100%;
+    
+    
+}
+ul{
+ display:flex;
+ justify-content: space-between ;
+  text-align: center;
+  opacity: 0.5;
+
+}
+ li {
+
+  list-style: none;
+  gap: 35px;
+  font-size: 40px;
+  
+  
+  
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-size: 60px;
+    position: absolute;
+    left: 57px;
+    bottom: 10px;
+    color: whitesmoke;
+
+}
+.container{
+  padding: 30px 13px;
+  
+}
+ ul li a:hover{
+    opacity:0.9;
+
+    
+  
+    
+}
+.logo-link img{
+   height: 39px;
+   
+   left: 74px;
+
+}
+.cart-link img{
+    height: 35px;
+     
+ right: 130px;
+}
+.search-link img{
+ height: 35px;
+
+}
+
+/*section
+
+*/
+.main-highlight-wrapper {
+    margin-top: 108px;
+     padding-right: 800px;
+    width:  3000px;
+    height: 1080px;
+    background-position: center;
+    background-image: url("../project/images/pic/home/hero_paralympics__f0u9lu6obdiu_large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.main-highlight-wrapper{
+    position: relative;
+    width: 100%;
+
+    overflow: hidden;
+
+}
+.text{
+    position: absolute;
+    top: 27vh;
+    left: 76vh;
+    font-size: 40px;
+    align-items: center;
+    
+}
+.head{
+    
+    font-size: 130px;
+    position: absolute;
+    left: 165px;
+    top: -70px;
+    
+}
+button{
+    position: absolute;
+    left: 270px;
+    top: 25vh;
+    width: 340px;
+    height: 120px;
+    border-radius: 70px;
+    background-color: white;
+    border: 1px solid white;
+    font-size: 40px;
+}
+/*section2
+*/
+.second-hightlight-wrapper{
+       background-image:url("../project/images/pic/icons/hero_iphone_family_a__c7v3mvx3jv42_large.jpg") ;
+    background-size: cover;
+    height: 932px;
+    width: 100%;
+    background-position: center;
+    margin-top: 20px;
+    position: relative;
+    
+}
+.secondimage {
+    text-align: center;
+   top: 130px;
+   
+    position: relative;
+}
+.title-wrapper{
+  font-size: 60px;
+
+}
+.description-wrapper{
+  font-size: 25px;
+  padding-left: 10px;
+
+}
+.bottom-wrapper{
+   font-size: 19px;
+   padding-left:5px ;
+}
+.first{
+     position: relative;
+    top: 140px;
+    left: 30%;
+    height: 120px;
+    width: 340px;
+    gap: 15px;
+    margin-top: 2px;
+    text-align:center;
+     background-color: blue;
+    color: white;
+    margin-left: 185px;
+}
+.second{
+    position: relative;
+    top: 140px;
+    left: 30%;
+    height: 120px;
+    width: 340px;
+    gap: 15px;
+    margin-top: 2px;
+    text-align:center;
+    background-color: black;
+    border: 1px solid blue;
+    color: blue;
+    
+}
+.butto {
+    
+    display: flex;
+    gap: 22px;
+    border-radius: 20px;
+    
+    
+   
+    
+}
+.bubble-1 .bubble-svg {
+    rotate: -5deg;
+    margin-left: 710px;
+}
+.bubble-svg{
+
+    margin: 30px 0px 0px 740px;
+}
+.bubble-copy{
+    font-size: 75px;
+    position: absolute;
+    top: -20px;
+    
+    align-items: center;
+}
+    /*
+.bubble-copy-1 {
+    --fontSize: 112px;
+    max-width: 80%;
+}
+.bubble-copy {
+    font-size: var(--fontSize);
+    color: white;
+    
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1;
+}
+    */
+    .heart img{
+        position: relative;
+        left: 500px;
+        bottom: 859px;
+        height: 318px;
+        
+    }
+    .pc img{
+         position: relative;
+        left: 1650px;
+        bottom: 1259px;
+        height: 318px;
+        
+    }
+    .ipad img{
+        position: relative;
+        left: 650px;
+        bottom: 809px;
+        height: 418px;
+        
+    }
+    .bubble-svg2{
+        position: relative;
+        bottom: 1490px;
+        left: 1200px;
+         rotate: -5deg;
+        
+
+    }
+    .bubble-svg3{
+         position: relative;
+        bottom: 940px;
+        left: 90px;
+        rotate: 5deg;
+
+    } 
+    .gift-image img{
+          position: relative;
+        left: 2150px;
+        bottom: 1309px;
+        height: 318px;
+        
+    }
+    .bubble-svg4{
+         position: relative;
+        bottom: 990px;
+        left: 790px;
+        
+
+    }
+.bubble-copybubble-copy-4{
+    font-size: 30px;
+    text-align: center;
+    padding-right: 75px;
+}
+.quoteimage img{
+      position: relative;
+        left: 1799px;
+        bottom: 1149px;
+        height: 78px;
+}
+.Shopbutton{
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    background-color: white;
+    border: 1px solid rgb(47, 47, 228);
+    top: 101em;
+    left:1500px ;
+}
+.Shopbutton:hover{
+    color: white;
+    background-color:blue;
+    transition:  background-color 0.9s;
+}
+.fourth-heghlight-wrapper{
+    position: relative;
+    margin-top: -35em;
+}
+ .left-side-wrapper{
+    background-image: url("../project/images/pic/newimages/promo_ipadpro__ch217v9v7no2_large.jpg");
+      width: 100%;
+    height: 100vh;
+    background-size: 50% 50%;
+    padding-bottom: 30em;
+   
+    background-repeat: no-repeat;
+}
+.description-wraper{
+    position: absolute;
+    top: 54px;
+    left: 470px;
+   
+
+}
+.ipad-pro{
+    font-size: 50px;
+    margin-left: 70px;
+}
+.third-buttons{
+    display: flex;
+}
+.primary-button{
+    position: absolute;
+    width: 300px;
+    height: 120px;
+    top: 160px;
+    left: 280px;
+    background-color: rgb(46, 46, 219);
+      color: white;
+}
+.secondary-button{
+    position: absolute;
+     width: 150px;
+   
+    height: 120px;
+    left: 700px;
+    top: 160px;
+    background-color: black;
+    border: 1px solid rgb(63, 63, 207);
+    color: rgb(78, 78, 216);
+}
+.right-side-wrapper{
+    background-image: url("../project/images/pic/home/macbook-pro.jpg" );
+    width: 100%;
+    height: 1160px;
+   
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1400px;
+    bottom: 610px;
+    background-size: 49% 83%;
+    
+}
+.second-description-wrapper{
+     position: absolute;
+    top: 54px;
+    left: 470px 
+}
+.Mac{
+  font-size: 90px;
+    margin-left: 70px;
+    color:white;
+    position: absolute;
+     left: 1550px;
+    bottom: 1510px;
+    text-align: center;
+
+}
+/* secton */
+.fifth-highlight-wrapper{
+    position: relative;
+    margin-top: -50em;
+
+}
+.second-left-side-wrapper{
+    position: absolute;
+    background-image: url("../project/images/pic/newimages/promo_apple_vision_pro__f4v4zp0sum2y_large.jpg");
+    background-size: 50% 90%;
+    width: 100%;
+    height: 1200px;
+    background-repeat: no-repeat;
+    top: 23px;
+}
+.vision-logo img{
+    position: absolute;
+    top: 60%;
+    left: 18%;
+    width: 360px;
+}
+.third-description-wrapper{
+    position: absolute;
+    top:23em ;
+    left: 14%;
+    color:black;
+    font-size: 35px;
+    font-weight: bold;
+}
+.vision-button{
+     position: absolute;
+     width: 250px;
+   
+    height: 120px;
+    left: 400px;
+    top: 860px;
+    background-color: blue;
+    border: 1px solid rgb(63, 63, 207);
+    color:white;
+}
+.vision2-button{
+       position: absolute;
+     width: 180px;
+   
+    height: 120px;
+    left: 700px;
+    top: 860px;
+    background-color:white;
+    border: 1px solid rgb(63, 63, 207);
+    color: rgb(78, 78, 216);
+}
+.vision2-button:hover{
+    background-color:rgb(2, 74, 156);
+    transition: background-color 0.8s;
+
+}
+.second-right-side-wrapper{
+    background-image: url("../project/images/pic/newimages/promo_apple_watch_series_9_order__b3u85rm9zf6u_large.jpg");
+    position: absolute;
+    background-size: 50% 90%;
+    width: 100%;
+    height: 1200px;
+    background-repeat: no-repeat;
+    top: 23px;
+    left: 1400px ;
+}
+.watch-series5-logo img{
+    position: absolute;
+    left: 30em;
+    height: 130px;
+    top: 5em;
+
+}
+.fourth-description-wrapper{
+    position: absolute;
+    left: 6em;
+    font-size: 60px;
+    color: white;
+    top: 4em;
+    
+}
+.sixth-buttons{
+    position: relative;
+    display: flex;
+    gap: 800px;
+}
+.smart-button{
+    position: absolute;
+ 
+     width: 250px;
+   
+    height: 120px;
+    left: 12em;
+    top: 8em;
+    background-color: blue;
+    border: 1px solid rgb(63, 63, 207);
+    color:white;
+}
+.smart-button2{
+     position: absolute;
+ 
+     width: 180px;
+   
+    height: 120px;
+    left: 20em;
+    top: 8em;
+    background-color:black;
+    border: 1px solid rgb(63, 63, 207);
+    color:rgb(63, 63, 207);
+}
+.smart-button2:hover{
+    transition: background-color 0.8s;
+    background-color: blue;
+    color: white;
+}
+/* .slide {
+    position: absolute;
+    top: 90vh;
+    width: 100%;
+    /* animation: ed 5s linear infinite; */
+/* } */ 
+
+@keyframes ed{
+ 0%{
+    transform: translateX(0%);
+ }
+
+ 
+100%{
+    transform:translateX(-100%);
+}
+} 
+.slideshow{
+    position: relative;
+    margin-top: 10em;
+    width: 100%;
+    height: 1250px;
+    overflow: hidden;
+}
+ .slideshow-container{
+    position: absolute;
+    
+    display: flex;
+     animation: ed 15s linear infinite ;
+     gap: 12px;
+      margin-left: 15em;
+ }
+ .slide{
+   
+    background-color: red;
+ }
+ 
+ .slide img{
+   height: 500px;
+ }
+ .slideshow-container2{
+  position: relative;
+  top:74em;
+  width: 100%;
+  height: 120em;
+  display: flex;
+  
+  overflow: hidden;
+  
+ }
+ .slide2{ 
+    position: absolute;
+     width: 100%;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(100%);
+     transition: opacity 0.9s ease, transform 0.5s ease;
+     
+ }
+ .slide2 img{
+    width: 100%;
+    height: 60em;
+    
+    object-fit: cover;
+    
+   
+ }
+
+
+.slide2:nth-child(1) {
+  animation: example 25s infinite;
+}
+
+.slide2:nth-child(2) {
+  animation: example 25s infinite;
+  animation-delay: 5s;
+}
+
+.slide2:nth-child(3) {
+  animation: example 25s infinite;
+  animation-delay: 10s;
+}
+
+.slide2:nth-child(4) {
+  animation: example 25s infinite;
+  animation-delay: 15s;
+}
+
+.slide2:nth-child(5) {
+  animation: example 25s infinite;
+  animation-delay: 20s;
+}
+
+@keyframes example {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  4%, 20% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+ /* .slide2:nth-child(1){
+    animation:example 25s infinite ;
+ }
+ .slide2:nth-child(2){
+    animation:example 25s 5s infinite;
+ }
+ .slide2:nth-child(3){
+    animation:example 25s 10s infinite;
+ }
+ .slide2:nth-child(4) {
+  animation: example 25s 15s infinite;
+}
+
+.slide2:nth-child(5) {
+  animation: example 25s 20s infinite;
+} */
+ /* @keyframes example{
+   0%,26%{
+    opacity: 1;
+    transform: translateX(0);
+
+   }
+   33.33%, 93.33%{
+    opacity: 0;
+        transform: translateX(-100%);
+   }
+   100%{
+    opacity: 0;
+        transform: translateX(-100%);
+   }
+ }
+  */
+  /* @keyframes example {
+  0%, 20% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  25%, 100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+} 
