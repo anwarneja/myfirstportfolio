@@ -51,6 +51,31 @@
     color: #070707 !important; /* Change text color on hover */
     background-color: #bd1aa2 !important; /* Change background color on hover */
   }
+  .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.view-project {
+  transition: 0.3s ease-in-out;
+}
+
+.view-project:hover {
+  background-color: #ff5733;
+  border-color: #ff5733;
+  color: white;
+}
+
+.badge {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
 </style>
   </head>
 
@@ -632,353 +657,79 @@
             </ul>
             <!-- End Portfolio Filters -->
 
-            <div
-              class="row gy-4 isotope-container"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="./APPLESHOMEPAGE/project/images/pic/newimages/promo_apple_vision_pro__f4v4zp0sum2y_small.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Apple's home page fully Responsive</h4>
-                    <p>Built a mobile friendly app for customers</p>
-                    <a
-                      href="./assets/img/portfolio/product-1.jpg"
-                      title="App 1"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="bootstrapaasinment final main.zip (2)/bootstrapaasinment main.zip/bootstrapaasinment/booooot.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
+            <div class="container py-5">
+              <div class="row gy-4">
+                <!-- Project Card 1 -->
+                <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card shadow-lg border-0">
+                    <img src="./new img/responder-student-reporting-management-system.png" class="card-img-top" alt="Project Image">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">
+                        <i class="bi bi-mortarboard"></i> SMS
+                      </h5>
+                      <p class="card-text text-muted">A full-stack web application designed to streamline student data management by handling student records, tuition payments, and attendance tracking. The system offers automated notifications, secure access, and a responsive UI for efficient academic administration..</p>
+                      
+                      <div class="d-flex justify-content-center gap-2 flex-wrap">
+                        <span class="badge bg-success">Node.js</span>
+                        <span class="badge bg-primary">Express.js</span>
+                        <span class="badge bg-warning text-dark">MySQL</span>
+                        <span class="badge bg-info text-dark">Bootstrap</span>
+                        <span class="badge bg-dark">CSS</span>
+                      </div>
+            
+                      <a href="https://full-stack-student-management-system.vercel.app/" class="btn btn-primary mt-3 view-project">View Project</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- End Portfolio Item -->
+            
+                <!-- Project Card 2 -->
+                <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card shadow-lg border-0">
+                    <img src="./new img/Pi7_Tool_1688816274915.jpg" class="card-img-top" alt="Project Image">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">
+                        <i class="bi bi-chat-dots"></i> Chat App
+                      </h5>
+                      <p class="card-text text-muted">A real-time chat application powered by Socket.io that enables instant messaging with multiple users. The system offers live chat updates, active user status, and secure connections for seamless communication.Done by node express socket io(for real time communication)</p>
+            
+                      <div class="d-flex justify-content-center gap-2 flex-wrap">
+                        <span class="badge bg-success">Node.js</span>
+                        <span class="badge bg-primary">Express.js</span>
+                        <span class="badge bg-danger">Socket.io</span>
+                        <span class="badge bg-warning text-dark">CSS</span>
+                      </div>
+            
+                      <a href="#" class="btn btn-primary mt-3 view-project">View Project</a>
+                    </div>
+                  </div>
+                </div>
 
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="./APPLESHOMEPAGE/project/images/pic/newimages//pexels-pixabay-356056.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Product 1</h4>
-                    <p>Apples homes'page website</p>
-                    <a
-                      href="./assets/img/portfolio/app-2.jpg"
-                      title="Product 1"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="#"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
+                <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card shadow-lg border-0">
+                    <img src="./new img/Pi7_Tool_1688816274915.jpg" class="card-img-top" alt="Project Image">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">
+                        <i class="bi bi-chat-dots"></i> ECOMMERCE Website
+                      </h5>
+                      <p class="card-text text-muted">A real-time chat application powered by Socket.io that enables instant messaging with multiple users. The system offers live chat updates, active user status, and secure connections for seamless communication.Done by node express socket io(for real time communication)</p>
+            
+                      <div class="d-flex justify-content-center gap-2 flex-wrap">
+                        <span class="badge bg-success">JavaScript</span>
+                        <span class="badge bg-primary">Jquery</span>
+                        <span class="badge bg-danger">Bootstrap</span>
+                        <span class="badge bg-warning text-dark">CSS</span>
+                      </div>
+            
+                      <a href="https://anwarneja.github.io/ANU-ECOMMERCE/" class="btn btn-primary mt-3 view-project">View Project</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- End Portfolio Item -->
+                
 
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="./fruitloverspage/images/fruit-4.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Fruit lovers design</h4>
-                    <p>High quality graphic photos and designs</p>
-                    <a
-                      href="./fruitloverspage/images/fruit-3.jpg"
-                      title="Branding 1"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="./fruitloverspage/index.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
               </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="./assets/img/mydesign.jpg"
-                    style="height: 10em"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>UI Designs</h4>
-                    <p>Skilled designs</p>
-                    <a
-                      href="assets/img/portfolio/books-1.jpg"
-                      title="Branding 1"
-                      data-gallery="portfolio-gallery-book"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a href="#" title="More Details" class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/app-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>App 2</h4>
-                    <p>WE design impressive mobile app demos</p>
-                    <a
-                      href="assets/img/portfolio/app-2.jpg"
-                      title="App 2"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a href="#" title="More Details" class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/product-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Product 2</h4>
-                    <p>cheap and high-fidelity products</p>
-                    <a
-                      href="assets/img/portfolio/product-2.jpg"
-                      title="Product 2"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a href="#" title="More Details" class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/branding-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Branding 2</h4>
-                    <p>making our customers happy is one of our goal!!!</p>
-                    <a
-                      href="assets/img/portfolio/branding-2.jpg"
-                      title="Branding 2"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a href="#" title="More Details" class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <!-- <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/books-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Books 2</h4>
-                    <p>Time managment</p>
-                    <a
-                      href="assets/img/portfolio/books-2.jpg"
-                      title="Branding 2"
-                      data-gallery="portfolio-gallery-book"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="#"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div> -->
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/app-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>App 3</h4>
-                    <p>Responsive Designs</p>
-                    <a
-                      href="assets/img/portfolio/app-3.jpg"
-                      title="App 3"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a href="#about" title="More Details" class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="./assets/img/portfolio/branding-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Product 3</h4>
-                    <p>Resonsive products</p>
-                    <a
-                      href="../iPortfolio/bootstrapaasinment final main.zip (2)/bootstrapaasinment main.zip/bootstrapaasinment/project/images/pic/newimages/promo_ai__couihqxznyvm_large.jpg"
-                      title="Product 3"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a href="#" title="More Details" class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/app-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Branding 3</h4>
-                    <p>Front-End</p>
-                    <a
-                      href="../APPLESHOMEPAGE/project/images/pic/newimages/pexels-tranmautritam-245032.jpg"
-                      title="Branding 2"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a href="#" title="More Details" class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="../APPLESHOMEPAGE/project/images/pic/newimages/980x551 (4).jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Books 3</h4>
-                    <p>Contact US</p>
-                    <a
-                      href="../iPortfolio/APPLESHOMEPAGE/project/images/pic/newimages/980x551 (2).jpg"
-                      title="Branding 3"
-                      data-gallery="portfolio-gallery-book"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a href="#Contact" title="More Details" class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
             </div>
-            <!-- End Portfolio Container -->
-          </div>
-        </div>
-      </section>
-      <!-- /Portfolio Section -->
+            
+            
 
       <!-- Services Section -->
       <section id="services" class="services section">
