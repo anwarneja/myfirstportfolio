@@ -9,7 +9,7 @@
   <meta content="" name="keywords" />
 
   <!-- Favicons -->
-  <link href="assets/img/android-chrome-512x512.png" rel="icon" />
+  <link href="./new img/safar-safarov-MSN8TFhJ0is-unsplash.jpg" rel="icon" />
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -155,68 +155,86 @@
         /* Leave space for sidebar */
       }
     }
+    .header {
+  background: linear-gradient(145deg, #1a1a1d, #2a2a2e);
+  min-height: 100vh;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.navmenu .nav-link {
+  transition: background 0.3s, color 0.3s;
+  border-radius: 8px;
+}
+
+.navmenu .nav-link:hover,
+.navmenu .nav-link.active {
+  background-color: #ffc107;
+  color: #000 !important;
+}
+
+.social-links a {
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffc107 !important;
+}
+
   </style>
 </head>
 
 <body class="index-page with-sidebar">
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <header id="header" class="header bg-dark d-flex flex-column text-light" style="width: 280px;">
+    <i class="header-toggle d-xl-none bi bi-list text-warning fs-3 my-2 ms-3"></i>
 
-    <div class="profile-img">
-      <img src="./assets/img/last.jpg" alt="" class="img-fluid rounded-circle" />
+    <div class="profile-img my-3 text-center">
+      <img src="./assets/img/last.jpg" alt="" class="img-fluid rounded-circle border border-warning" style="width: 120px; height: 120px; object-fit: cover;" />
     </div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 style="color: peru" class="sitename">Anwar Neja</h1>
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center mb-3 text-decoration-none">
+      <h1 class="sitename text-warning">Anwar Neja</h1>
     </a>
 
-    <div class="social-links text-center">
-      <a href="https://twitter.com/anwar-neja94033" class="twitter"><i class="bi bi-twitter"
-          style="font-size: 1.5rem"></i></a>
-      <a href="https://www.instagram.com/neja.anwar?igsh=MTR3OHd0Njc5enRwYw==" class="instagram"><i
-          class="bi bi-instagram" style="font-size: 1.5rem"></i></a>
-      <a href="https://t.me/know82" class="telegram" target="_blank"><i class="bi bi-telegram"
-          style="font-size: 1.5rem"></i></a>
-      <a href="https://www.linkedin.com/in/anwar-neja-6a74082bb" class="linkedin" target="_blank"><i
-          class="bi bi-linkedin" style="font-size: 1.5rem"></i></a>
-      <a href="https://github.com/anwarneja" class="github" target="_blank"><i class="bi bi-github"
-          style="font-size: 1.5rem"></i></a>
+    <!-- Social Icons -->
+    <div class="social-links text-center mb-4">
+      <a href="https://twitter.com/anwar-neja94033" class="text-light me-2" target="_blank"><i class="bi bi-twitter fs-4"></i></a>
+      <a href="https://www.instagram.com/neja.anwar" class="text-light me-2" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+      <a href="https://t.me/know82" class="text-light me-2" target="_blank"><i class="bi bi-telegram fs-4"></i></a>
+      <a href="https://www.linkedin.com/in/anwar-neja-6a74082bb" class="text-light me-2" target="_blank"><i class="bi bi-linkedin fs-4"></i></a>
+      <a href="https://github.com/anwarneja" class="text-light" target="_blank"><i class="bi bi-github fs-4"></i></a>
     </div>
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li>
-          <a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a>
+    <!-- Navigation Menu -->
+    <nav id="navmenu" class="navmenu flex-grow-1">
+      <ul class="nav flex-column text-center">
+        <li class="nav-item">
+          <a href="#hero" class="nav-link text-light py-2"><i class="bi bi-house me-2"></i>Home</a>
         </li>
-        <li>
-          <a href="#about"><i class="bi bi-person navicon"></i> About</a>
+        <li class="nav-item">
+          <a href="#about" class="nav-link text-light py-2"><i class="bi bi-person me-2"></i>About</a>
         </li>
-        <li>
-          <a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a>
+        <li class="nav-item">
+          <a href="#resume" class="nav-link text-light py-2"><i class="bi bi-file-earmark-text me-2"></i>Resume</a>
         </li>
-        <li>
-          <a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a>
+        <li class="nav-item">
+          <a href="#portfolio" class="nav-link text-light py-2"><i class="bi bi-images me-2"></i>Projects</a>
         </li>
-        <li>
-          <a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a>
+        <li class="nav-item">
+          <a href="#services" class="nav-link text-light py-2"><i class="bi bi-hdd-stack me-2"></i>Services</a>
         </li>
-
-        <li>
-          <a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link text-light py-2"><i class="bi bi-envelope me-2"></i>Contact</a>
         </li>
-        <!-- <a href="./index.html" class="btn btn-primary" download>Download CV</a> -->
-        <div class="container text-center mt-1"></div>
-        <a href="./new img/Anwar_Neja_CV.pdf"
-          class="btn btn-sm rounded-pill text-white d-inline-flex align-items-center justify-content-center"
-          style="width: 200px; background-color: rgb(228, 119, 10); font-weight: 500;" download id="cv-button">
-          <i class="fas fa-file-download me-2"></i> Download My CV
-        </a>
-
-        </div>
+        
       </ul>
     </nav>
+
+    <!-- CV Button -->
+    <div class="text-center mt-4 mb-3">
+      <a href="./new img/Anwar_Neja_CV.pdf" class="btn btn-warning btn-sm rounded-pill px-4" download>
+        <i class="fas fa-file-download me-2"></i>Download My CV
+      </a>
+    </div>
   </header>
 
   <!-- Hero Section -->
@@ -364,7 +382,8 @@
                 <li><i class="bi bi-chevron-right text-warning"></i> <strong>Birthday:</strong> <span>19 March
                     2003</span></li>
                 <li><i class="bi bi-chevron-right text-warning"></i> <strong>Website:</strong>
-                  <span>www.anwarneja.com</span></li>
+                  <span>www.anwarneja.com</span>
+                </li>
                 <li><i class="bi bi-chevron-right text-warning"></i> <strong>Phone:</strong> <span>+251990013445</span>
                 </li>
                 <li><i class="bi bi-chevron-right text-warning"></i> <strong>City:</strong> <span>Addis Ababa,
@@ -377,7 +396,8 @@
                 <li><i class="bi bi-chevron-right text-warning"></i> <strong>Degree:</strong> <span>BSc in Computer
                     Science</span></li>
                 <li><i class="bi bi-chevron-right text-warning"></i> <strong>Email:</strong>
-                  <span>anwarneja55@gmail.com</span></li>
+                  <span>anwarneja55@gmail.com</span>
+                </li>
                 <li><i class="bi bi-chevron-right text-warning"></i> <strong>Freelance:</strong> <span>Available</span>
                 </li>
               </ul>
@@ -789,523 +809,709 @@
       }
     </style>
   </section>
-  <!-- /Resume Section -->
+  <!-- /Resume Section end -->
 
-  <!-- /Resume Section -->
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio section light-background">
-    <!-- Section Title -->
+  <!-- Portfolio Section begin -->
+
+  <section id="portfolio" class="portfolio section"
+    style="background-color: #121212; padding: 60px 0; margin: 40px 0 40px 0;">
     <div class="container section-title" data-aos="fade-up">
-      <h2>Projects</h2>
-      <p>Software development projects and graphcs design projects</p>
+      <h2 class="text-white" style="color: #e4770a !important;">Projects</h2>
+      <p class="text-light">Full-stack web applications and UI/UX design projects showcasing technical skills and
+        creative solutions.</p>
     </div>
-    <!-- End Section Title -->
 
     <div class="container">
-      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-product">Product</li>
-          <li data-filter=".filter-branding">Branding</li>
-          <li data-filter=".filter-books">Books</li>
-        </ul>
-        <!-- End Portfolio Filters -->
+      <div class="row gy-4 equal-height">
 
-        <div class="container py-5">
-          <div class="row gy-4">
-            <!-- Project Card 1 -->
-            <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="card shadow-lg border-0">
-                <img src="./new img/responder-student-reporting-management-system.png" class="card-img-top"
-                  alt="Project Image">
-                <div class="card-body text-center">
-                  <h5 class="card-title">
-                    <i class="bi bi-mortarboard"></i> SMS
-                  </h5>
-                  <p class="card-text text-muted">A full-stack web application designed to streamline student data
-                    management by handling student records, tuition payments, and attendance tracking. The system offers
-                    automated notifications, secure access, and a responsive UI for efficient academic administration..
-                  </p>
-
-                  <div class="d-flex justify-content-center gap-2 flex-wrap">
-                    <span class="badge bg-success">Node.js</span>
-                    <span class="badge bg-primary">Express.js</span>
-                    <span class="badge bg-warning text-dark">MySQL</span>
-                    <span class="badge bg-info text-dark">Bootstrap</span>
-                    <span class="badge bg-dark">CSS</span>
-                  </div>
-
-                  <a href="https://full-stack-student-management-system.vercel.app/"
-                    class="btn btn-primary mt-3 view-project">View Project</a>
-                </div>
+        <!-- Project 1: Student Management System -->
+        <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow border-0 bg-dark text-light d-flex flex-column h-100">
+            <img src="./new img/responder-student-reporting-management-system.png" class="card-img-top"
+              alt="SMS Project Image">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title text-warning"><i class="bi bi-mortarboard"></i> Student Management System</h5>
+              <p class="card-text">
+                A robust full-stack application to manage student records, tuition payments, class schedules, and
+                attendance.
+                Features a secure login system, real-time updates, and responsive UI for administrators and students.
+                Built using Express.js, MySQL, and Bootstrap.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                <span class="badge bg-success">Node.js</span>
+                <span class="badge bg-primary">Express.js</span>
+                <span class="badge bg-warning text-dark">MySQL</span>
+                <span class="badge bg-info text-dark">Bootstrap</span>
+                <span class="badge bg-light text-dark">CSS</span>
               </div>
+              <a href="https://full-stack-student-management-system.vercel.app/" target="_blank"
+                class="btn btn-outline-warning mt-3">View Project</a>
             </div>
-
-            <!-- Project Card 2 -->
-            <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="card shadow-lg border-0">
-                <img src="./new img/Pi7_Tool_1688816274915.jpg" class="card-img-top" alt="Project Image">
-                <div class="card-body text-center">
-                  <h5 class="card-title">
-                    <i class="bi bi-chat-dots"></i> Chat App
-                  </h5>
-                  <p class="card-text text-muted">A real-time chat application powered by Socket.io that enables instant
-                    messaging with multiple users. The system offers live chat updates, active user status, and secure
-                    connections for seamless communication.Done by node express socket io(for real time communication)
-                  </p>
-
-                  <div class="d-flex justify-content-center gap-2 flex-wrap">
-                    <span class="badge bg-success">Node.js</span>
-                    <span class="badge bg-primary">Express.js</span>
-                    <span class="badge bg-danger">Socket.io</span>
-                    <span class="badge bg-warning text-dark">CSS</span>
-                  </div>
-
-                  <a href="#" class="btn btn-primary mt-3 view-project">View Project</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="card shadow-lg border-0">
-                <img src="./new img/Adobe Express - file.jpg" class="card-img-top" height="345px" alt="Project Image">
-                <div class="card-body text-center">
-                  <h5 class="card-title">
-                    <i class="bi bi-chat-dots"></i> ECOMMERCE Website
-                  </h5>
-                  <p class="card-text text-muted"> A fully responsive e-commerce platform that enables users to browse,
-                    search, and purchase products online. The system includes a shopping cart, secure checkout, and
-                    real-time updates for seamless transactions. The system features a dynamic product catalog, an
-                    interactive shopping cart with live quantity.</p>
-
-                  <div class="d-flex justify-content-center gap-2 flex-wrap">
-                    <span class="badge bg-success">JavaScript</span>
-                    <span class="badge bg-primary">Jquery</span>
-                    <span class="badge bg-danger">Bootstrap</span>
-                    <span class="badge bg-warning text-dark">CSS</span>
-                  </div>
-
-                  <a href="https://anwarneja.github.io/ANU-ECOMMERCE/" class="btn btn-primary mt-3 view-project">View
-                    Project</a>
-                </div>
-              </div>
-            </div>
-
-
           </div>
         </div>
 
-
-
-        <!-- Services Section -->
-        <section id="services" class="services section">
-          <!-- Section Title -->
-          <div class="container section-title" data-aos="fade-up">
-            <h2>Services</h2>
-            <p>
-              Passionate and detail-oriented Front-End Developer with a strong
-              focus on creating visually appealing and highly responsive websites.
-              Proficient in modern web technologies including HTML, CSS, and
-              JavaScript, with expertise in frameworks such as Bootstrap.
-            </p>
-          </div>
-          <!-- End Section Title -->
-
-          <div class="container">
-            <div class="row gy-4">
-              <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon flex-shrink-0">
-                  <i class="bi bi-briefcase"></i>
-                </div>
-                <div>
-                  <h4 class="title">
-                    <a href="service-details.html" class="stretched-link">
-                      Responsive Web Design</a>
-                  </h4>
-                  <p class="description">
-                    Crafting visually appealing, mobile-first, and highly
-                    responsive websites using modern web technologies such as
-                    HTML, CSS, and JavaScript, with expertise in frameworks like
-                    Bootstrap.
-                  </p>
-                </div>
-              </div>
-              <!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon flex-shrink-0">
-                  <i class="bi bi-card-checklist"></i>
-                </div>
-                <div>
-                  <h4 class="title">
-                    <a href="service-details.html" class="stretched-link">
-                      UI/UX Design</a>
-                  </h4>
-                  <p class="description">
-                    Ensuring user-centered design principles are applied to create
-                    intuitive and engaging user interfaces that offer seamless
-                    user experiences.
-                  </p>
-                </div>
-              </div>
-              <!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon flex-shrink-0">
-                  <i class="bi bi-bar-chart"></i>
-                </div>
-                <div>
-                  <h4 class="title">
-                    <a href="service-details.html" class="stretched-link">
-                      Website Optimization</a>
-                  </h4>
-                  <p class="description">
-                    Enhancing website performance by minimizing load times,
-                    optimizing images, and implementing clean, efficient code for
-                    a smooth user experience.
-                  </p>
-                </div>
-              </div>
-              <!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon flex-shrink-0">
-                  <i class="bi bi-binoculars"></i>
-                </div>
-                <div>
-                  <h4 class="title">
-                    <a href="service-details.html" class="stretched-link">Custom Front-End Development</a>
-                  </h4>
-                  <p class="description">
-                    Building custom front-end solutions tailored to client needs,
-                    from interactive layouts to responsive components, ensuring
-                    high functionality across devices.
-                  </p>
-                </div>
-              </div>
-              <!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon flex-shrink-0">
-                  <i class="bi bi-brightness-high"></i>
-                </div>
-                <div>
-                  <h4 class="title">
-                    <a href="service-details.html" class="stretched-link">
-                      Cross-Browser Compatibility</a>
-                  </h4>
-                  <p class="description">
-                    Guaranteeing consistent behavior and appearance of websites
-                    across various browsers and platforms.
-                  </p>
-                </div>
-              </div>
-              <!-- End Service Item -->
-
-              <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-                <div class="icon flex-shrink-0">
-                  <i class="bi bi-calendar4-week"></i>
-                </div>
-                <div>
-                  <h4 class="title">
-                    <a href="service-details.html" class="stretched-link">Ongoing Maintenance & Support</a>
-                  </h4>
-                  <p class="description">
-                    Providing website updates, bug fixes, and technical support to
-                    ensure your site stays current and functional.
-                  </p>
-                </div>
-              </div>
-              <!-- End Service Item -->
-            </div>
-          </div>
-        </section>
-        <!-- /Services Section -->
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials section light-background">
-          <!-- Section Title -->
-          <div class="container section-title" data-aos="fade-up">
-            <h2>Testimonials</h2>
-            <p></p>
-          </div>
-          <!-- End Section Title -->
-
-          <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 1,
-                    "spaceBetween": 40
-                  },
-                  "1200": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 1
-                  }
-                }
-              }
-            </script>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>"Anwar took our vision and brought it to life with an
-                        exceptional design that exceeded our expectations. His
-                        mastery of Bootstrap made the site highly responsive, and
-                        his UX insights helped us create an intuitive,
-                        user-centered platform."</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <img src="./assets/img/testimonials/nesre2 copy.jpg" class="testimonial-img" alt="" />
-                    <h3>Nesredin Haji</h3>
-                    <h4>Ceo &amp; Founder</h4>
-                  </div>
-                </div>
-                <!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>UI/UX Designer "Anwar is a highly skilled UI/UX designer
-                        who excels at making complex interfaces look simple and
-                        engaging. His creative approach and ability to turn ideas
-                        into polished, responsive designs set him apart. He’s a
-                        true professional in every sense."</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <img src="assets/img/testimonials/mensur2.jpg" class="testimonial-img" alt="" />
-                    <h3>Mensur Muhammed</h3>
-                    <h4>UI/UX-Designer</h4>
-                  </div>
-                </div>
-                <!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>
-                        "Collaborating with Anwar on front-end integration for our
-                        Laravel project was a seamless experience. His ability to
-                        translate complex back-end functionality into a smooth,
-                        responsive user interface made the development process
-                        efficient. His keen eye for design and attention to user
-                        experience added real value to the project."
-                      </span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <img src="assets/img/testimonials/kiyu.jpg" class="testimonial-img" alt="" />
-                    <h3>Kiya Tilahun</h3>
-                    <h4>Laravel Developer</h4>
-                  </div>
-                </div>
-                <!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>
-                        "Anwar’s front-end expertise made our collaboration on the
-                        ALX project truly enjoyable. He transformed the back-end
-                        logic into a visually appealing and highly functional
-                        interface, ensuring that every element was responsive and
-                        user-friendly. His skills in HTML, CSS, and Bootstrap
-                        really brought the project to life.</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <img src="assets/img/testimonials/inb3.jpg" class="testimonial-img" alt="" />
-                    <h3>Kedir Jabir</h3>
-                    <h4>Backenddeveloper-Alx student</h4>
-                  </div>
-                </div>
-                <!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      <span>"Working with Anwar was a fantastic experience. He not
-                        only delivered a beautiful and functional user interface
-                        but also took the time to ensure the website was optimized
-                        for speed and performance. His ability to create clean,
-                        user-friendly designs is top-notch!"</span>
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <img src="assets/img/testimonials/almd2.jpg" class="testimonial-img" alt="" />
-                    <h3>Alamudin Sultan</h3>
-                    <h4>Entrepreneur</h4>
-                  </div>
-                </div>
-                <!-- End testimonial item -->
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-        <!-- /Testimonials Section -->
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section">
-          <!-- Section Title -->
-          <div class="container section-title" data-aos="fade-up">
-            <h2>Contact</h2>
-            <p>
-              Feel free to reach out for any inquiries or collaboration
-              opportunities. I’m always open to discussing new projects or
-              answering any questions about front-end development, web design, or
-              UI/UX design.
-            </p>
-          </div>
-          <!-- End Section Title -->
-
-          <div class="container" data-aos="fade-up" data-aos-delay="100">
-            <div class="row gy-4">
-              <div class="col-lg-5">
-                <div class="info-wrap">
-                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                    <i class="bi bi-geo-alt flex-shrink-0"></i>
-                    <div>
-                      <h3>Address</h3>
-                      <p>BOLE Bole Homes Street, Addis Addis-Ababa, AA 135022</p>
-                    </div>
-                  </div>
-                  <!-- End Info Item -->
-
-                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <i class="bi bi-telephone flex-shrink-0"></i>
-                    <div>
-                      <h3>Call Us</h3>
-                      <p>+251930836011</p>
-                    </div>
-                  </div>
-                  <!-- End Info Item -->
-
-                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                    <i class="bi bi-envelope flex-shrink-0"></i>
-                    <div>
-                      <h3>Email Us</h3>
-                      <p>anwarneja55@gmail.com</p>
-                    </div>
-                  </div>
-                  <!-- End Info Item -->
-
-                  <!-- <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                  frameborder="0"
-                  style="border: 0; width: 100%; height: 270px"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe> -->
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7881.664797867675!2d38.78807078011282!3d8.987565332610172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b84e71c6e2d21%3A0xe17e80792c5276f4!2sBole%20Homes%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1725840455327!5m2!1sen!2set"
-                    frameborder="0" style="border: 0; width: 100%; height: 270px" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                  </iframe>
-                </div>
-              </div>
-
-              <div class="col-lg-7">
-                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                  data-aos-delay="200">
-                  <div class="row gy-4">
-                    <div class="col-md-6">
-                      <label for="name-field" class="pb-2">Your Name</label>
-                      <input type="text" name="name" id="name-field" class="form-control" required="" />
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="email-field" class="pb-2">Your Email</label>
-                      <input type="email" class="form-control" name="email" id="email-field" required="" />
-                    </div>
-
-                    <div class="col-md-12">
-                      <label for="subject-field" class="pb-2">Subject</label>
-                      <input type="text" class="form-control" name="subject" id="subject-field" required="" />
-                    </div>
-
-                    <div class="col-md-12">
-                      <label for="message-field" class="pb-2">Message</label>
-                      <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                    </div>
-
-                    <div class="col-md-12 text-center">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">
-                        Your message has been sent. Thank you!
-                      </div>
-
-                      <button type="submit">Send Message</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <!-- End Contact Form -->
-            </div>
-          </div>
-        </section>
-        <!-- /Contact Section -->
-        </main>
-
-        <footer id="footer" class="footer position-relative light-background">
-          <div class="container">
-            <div class="copyright text-center">
-              <p>
-                © <span>Copyright</span>
-                <strong class="px-1 sitename">MY Portfolio</strong>
-                <span>All Rights Reserved</span>
+        <!-- Project 2: Chat App -->
+        <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+          <div class="card shadow border-0 bg-dark text-light d-flex flex-column h-100">
+            <img src="./new img/Pi7_Tool_1688816274915.jpg" class="card-img-top" alt="Chat App Project Image">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title text-warning"><i class="bi bi-chat-dots"></i> Real-Time Chat App</h5>
+              <p class="card-text">
+                A real-time chat application using Socket.io for instant messaging across multiple clients. Includes
+                live user updates, typing indicators, and clean UI. Ideal for learning WebSocket technology and
+                multi-user systems.
               </p>
-            </div>
-            <div class="credits">
-              <!-- All the links in the footer should remain intact. -->
-              <!-- You can delete the links only if you've purchased the pro version. -->
-              <!-- Licensing information: https://bootstrapmade.com/license/ -->
-              <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-              Designed by <a href="#">Anwar Neja</a>
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                <span class="badge bg-success">Node.js</span>
+                <span class="badge bg-primary">Express.js</span>
+                <span class="badge bg-danger">Socket.io</span>
+                <span class="badge bg-warning text-dark">CSS</span>
+              </div>
+              <a href="https://socket-chat-9vkz.onrender.com/" target="_blank" class="btn btn-outline-warning mt-3">View Project</a>
             </div>
           </div>
-        </footer>
+        </div>
 
-        <!-- Scroll Top -->
-        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+        <!-- Project 3: E-commerce Website -->
+        <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="card shadow border-0 bg-dark text-light d-flex flex-column h-100">
+            <img src="./new img/Adobe Express - file.jpg" class="card-img-top" alt="Ecommerce Project Image">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title text-warning"><i class="bi bi-cart4"></i> E-commerce Website</h5>
+              <p class="card-text">
+                A sleek online store with dynamic product listing, live cart management, and secure checkout flow.
+                Features a modern front-end using Bootstrap and jQuery. Designed for responsive browsing and intuitive
+                shopping experience.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                <span class="badge bg-info text-dark">JavaScript</span>
+                <span class="badge bg-primary">jQuery</span>
+                <span class="badge bg-danger">Bootstrap</span>
+                <span class="badge bg-warning text-dark">CSS</span>
+              </div>
+              <a href="https://anwarneja.github.io/ANU-ECOMMERCE/"target="_blank" class="btn btn-outline-warning mt-3">View Project</a>
+            </div>
+          </div>
+        </div>
 
-        <!-- Preloader -->
-        <div id="preloader"></div>
+        <!-- Project 4: React List App -->
+        <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+          <div class="card shadow border-0 bg-dark text-light d-flex flex-column h-100">
+            <img src="./new img/vadim-sherbakov-tCICLJ5ktBE-unsplash.jpg" class="card-img-top" alt="React List Project">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title text-warning"><i class="bi bi-card-checklist"></i> React List Manager</h5>
+              <p class="card-text">
+                A responsive React-based list manager that allows users to add, delete, and update items with instant
+                feedback. Utilizes state management, component reuse, and styled with React Bootstrap for a clean UI.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mt-2 two-per-line">
+                <span class="badge bg-info text-dark">React.js</span>
+                <span class="badge bg-primary">React Bootstrap</span>
+                <span class="badge bg-warning text-dark">CSS</span>
+                <span class="badge bg-danger">Vite React</span>
 
-        <!-- Vendor JS Files -->
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/vendor/typed.js/typed.umd.js"></script>
-        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+              </div>
+              <style>
+                .two-per-line {
+                  display: grid !important;
+                  /* override flex */
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 0.5rem;
+                }
 
-        <!-- Main JS File -->
-        <script src="assets/js/main.js"></script>
+                .two-per-line span {
+                  text-align: center;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+              </style>
+              <a href="https://reactlist-item.netlify.app/"target="_blank" class="btn btn-outline-warning mt-3">View Project</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Equal Height CSS -->
+  <style>
+    .equal-height .card {
+      height: 100% !important;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .equal-height .card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-title i {
+      margin-right: 6px;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+    }
+
+    .btn-outline-warning {
+      border-color: #e4770a;
+      color: #e4770a;
+    }
+
+    .btn-outline-warning:hover {
+      background-color: #e4770a;
+      color: #000;
+    }
+
+    portfolio .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(255, 165, 0, 0.3);
+    }
+
+    .portfolio .card-body {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .portfolio .btn-outline-warning {
+      border-radius: 20px;
+      transition: 0.3s ease;
+    }
+
+    .portfolio .btn-outline-warning:hover {
+      background-color: #e4770a;
+      color: #000;
+    }
+  </style>
+
+  <!-- Portfolio Section  end-->
+
+
+
+
+
+  <!-- Services Section Start-->
+<section id="services" class="services section" style="background-color: #121212; color: #eee; margin: 30px 0 40px 0;" >
+  
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up" style="color: #e4770a;">
+    <h2 style="color: #e4770a; font-weight: 700;">Services</h2>
+    <p style="color: #ccc; max-width: 700px; margin: 0 auto 2rem auto;">
+      Passionate Full-Stack Developer and UI/UX Designer specializing in building modern, responsive web and mobile applications. Skilled in Node.js, React, Flutter, and crafting seamless user experiences.
+    </p>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Service Item 1 -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100" style="background: #1e1e1e; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(228,119,10,0.3);">
+        <div class="icon flex-shrink-0" style="color: #e4770a; font-size: 2.5rem; margin-right: 15px;">
+          <i class="bi bi-code-slash"></i>
+        </div>
+        <div>
+          <h4 class="title" style="color: #f9a825; font-weight: 700;">Full-Stack Web Development</h4>
+          <p class="description" style="color: #ddd;">
+            Developing scalable and efficient web applications with Node.js, Express, React, and databases such as MySQL and MongoDB. Focused on clean, maintainable code and seamless front-end/back-end integration.
+          </p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- Service Item 2 -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200" style="background: #1e1e1e; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(228,119,10,0.3);">
+        <div class="icon flex-shrink-0" style="color: #e4770a; font-size: 2.5rem; margin-right: 15px;">
+          <i class="bi bi-phone"></i>
+        </div>
+        <div>
+          <h4 class="title" style="color: #f9a825; font-weight: 700;">Mobile App Development with Flutter</h4>
+          <p class="description" style="color: #ddd;">
+            Designing and building beautiful, cross-platform mobile apps with Flutter and Dart. Delivering smooth animations, responsive UI, and robust back-end integrations.
+          </p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- Service Item 3 -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300" style="background: #1e1e1e; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(228,119,10,0.3);">
+        <div class="icon flex-shrink-0" style="color: #e4770a; font-size: 2.5rem; margin-right: 15px;">
+          <i class="bi bi-palette"></i>
+        </div>
+        <div>
+          <h4 class="title" style="color: #f9a825; font-weight: 700;">UI/UX Design</h4>
+          <p class="description" style="color: #ddd;">
+            Crafting intuitive, user-centered designs focused on usability, accessibility, and aesthetics. Skilled in wireframing, prototyping, and design tools like Figma and Adobe XD.
+          </p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- Additional Items from original -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400" style="background: #1e1e1e; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(228,119,10,0.3);">
+        <div class="icon flex-shrink-0" style="color: #e4770a; font-size: 2.5rem; margin-right: 15px;">
+          <i class="bi bi-binoculars"></i>
+        </div>
+        <div>
+          <h4 class="title" style="color: #f9a825; font-weight: 700;">Custom Front-End Development</h4>
+          <p class="description" style="color: #ddd;">
+            Building tailored front-end solutions, interactive layouts, and responsive components to meet specific client needs with high functionality.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500" style="background: #1e1e1e; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(228,119,10,0.3);">
+        <div class="icon flex-shrink-0" style="color: #e4770a; font-size: 2.5rem; margin-right: 15px;">
+          <i class="bi bi-brightness-high"></i>
+        </div>
+        <div>
+          <h4 class="title" style="color: #f9a825; font-weight: 700;">Cross-Browser Compatibility</h4>
+          <p class="description" style="color: #ddd;">
+            Guaranteeing consistent appearance and behavior across browsers and platforms to deliver a seamless experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600" style="background: #1e1e1e; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(228,119,10,0.3);">
+        <div class="icon flex-shrink-0" style="color: #e4770a; font-size: 2.5rem; margin-right: 15px;">
+          <i class="bi bi-calendar4-week"></i>
+        </div>
+        <div>
+          <h4 class="title" style="color: #f9a825; font-weight: 700;">Ongoing Maintenance & Support</h4>
+          <p class="description" style="color: #ddd;">
+            Providing timely updates, bug fixes, and technical support to keep your site secure and fully functional.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /Services Section End-->
+
+
+  <!-- Testimonials Section -->
+  <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section bg-dark text-light" style="background: linear-gradient(145deg, #1f1c2c, #928dab);">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 class="text-warning">Testimonials</h2>
+    <p>What collaborators and clients say about my Full-Stack, Mobile, and UI/UX expertise.</p>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": { "slidesPerView": 1, "spaceBetween": 40 },
+            "1200": { "slidesPerView": 3, "spaceBetween": 1 }
+          }
+        }
+      </script>
+
+      <div class="swiper-wrapper">
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide">
+          <div class="testimonial-item bg-secondary text-light p-4 rounded shadow-sm">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                "Anwar delivered a complete full-stack system for our organization — from mobile UI to database integration. His versatility with Node.js, Flutter, and front-end design is truly impressive."
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="./assets/img/testimonials/nesre2 copy.jpg" class="testimonial-img" alt="" />
+            <h3>Nesredin Haji</h3>
+            <h4>CEO & Founder</h4>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-item bg-secondary text-light p-4 rounded shadow-sm">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                "Working with Anwar was a game-changer. He handled both the backend logic and frontend aesthetics effortlessly. His understanding of UI/UX and server-side programming is top-notch."
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="./assets/img/testimonials/mensur2.jpg" class="testimonial-img" alt="" />
+            <h3>Mensur Muhammed</h3>
+            <h4>Ui-Designer</h4>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide">
+          <div class="testimonial-item bg-secondary text-light p-4 rounded shadow-sm">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                "From setting up RESTful APIs to building a stunning mobile interface, Anwar showcased deep knowledge in both frontend and backend. His work ethic and code quality are unmatched."
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="./assets/img/testimonials/kiyu.jpg" class="testimonial-img" alt="" />
+            <h3>Kiya Tilahun</h3>
+            <h4>Laravel Developer</h4>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="swiper-slide">
+          <div class="testimonial-item bg-secondary text-light p-4 rounded shadow-sm">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                "Anwar’s ability to develop full-stack applications — including backend architecture, Flutter mobile apps, and responsive design — made him essential to our team’s success."
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="./assets/img/testimonials/inb3.jpg" class="testimonial-img" alt="" />
+            <h3>Kedir Jabir</h3>
+            <h4>Backend Developer - ALX</h4>
+          </div>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="swiper-slide">
+          <div class="testimonial-item bg-secondary text-light p-4 rounded shadow-sm">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>
+                "Anwar has a great eye for design and the technical depth to bring it to life. Whether it’s backend APIs, mobile development with Flutter, or UI with React, he always delivers."
+              </span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="./assets/img/testimonials/almd2.jpg" class="testimonial-img" alt="" />
+            <h3>Alamudin Sultan</h3>
+            <h4>Entrepreneur</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination mt-3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Dark Styling -->
+<style>
+  #testimonials {
+    background-color: #292727;
+    color: #f0f0f0;
+  }
+  .testimonial-item span {
+  color: #3f3939; /* or #f8f9fa for lighter text */
+}
+
+
+  #testimonials .testimonial-item {
+    background-color: #2b2d2b!important;
+    border-left: 4px solid #ffc107;
+  }
+
+  #testimonials .testimonial-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px 0;
+  }
+
+  #testimonials .quote-icon-left,
+  #testimonials .quote-icon-right {
+    color: #ffc107;
+    font-size: 1.5rem;
+  }
+  #testimonials {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    padding: 60px 0;
+  }
+
+  #testimonials .section-title h2 {
+    color: #ffc107;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  #testimonials .section-title p {
+    color: #cccccc;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .testimonial-item {
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border-left: 5px solid #ffc107;
+    padding: 25px 30px;
+    margin: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(255, 193, 7, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(255, 193, 7, 0.15);
+  }
+
+  .testimonial-item p {
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .testimonial-img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 2px solid #ffc107;
+  }
+
+  .testimonial-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffc107;
+    margin-top: 10px;
+  }
+
+  .testimonial-item h4 {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #ffc107 !important;
+    margin-bottom: 0;
+  }
+
+  .quote-icon-left,
+  .quote-icon-right {
+    font-size: 1.5rem;
+    color: #ffc107;
+    vertical-align: middle;
+  }
+
+  @media (max-width: 768px) {
+    .testimonial-item {
+      padding: 20px;
+    }
+
+    .testimonial-item p {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+
+</style>
+
+  <!-- /Testimonials Section end -->
+
+  <!-- Contact Section -->
+<section id="contact" class="contact section text-light" style="background: linear-gradient(145deg, #1f1c2c, #928dab); padding: 60px 0; margin: 40px 0 0 0;">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 class="text-warning">Contact</h2>
+    <p>
+      Feel free to reach out for any inquiries or collaboration opportunities.
+      I’m always open to discussing new projects or answering questions about
+      full-stack backend development, mobile apps, or UI/UX design.
+    </p>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+      <!-- Contact Info -->
+      <div class="col-lg-5">
+        <div class="info-wrap bg-dark p-4 rounded shadow-sm">
+          <div class="info-item d-flex mb-4">
+            <i class="bi bi-geo-alt text-warning fs-4 me-3"></i>
+            <div>
+              <h5 class="text-light mb-1">Address</h5>
+              <p class="mb-0 text-light">Bole Homes Street, Addis Ababa, Ethiopia</p>
+            </div>
+          </div>
+
+          <div class="info-item d-flex mb-4">
+            <i class="bi bi-telephone text-warning fs-4 me-3"></i>
+            <div>
+              <h5 class="text-light mb-1">Call Me</h5>
+              <p class="mb-0 text-light">+251 990013445</p>
+            </div>
+          </div>
+
+          <div class="info-item d-flex mb-4">
+            <i class="bi bi-envelope text-warning fs-4 me-3"></i>
+            <div>
+              <h5 class="text-light mb-1">Email</h5>
+              <p class="mb-0 text-light">anwarneja55@gmail.com</p>
+            </div>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7881.664797867675!2d38.78807078011282!3d8.987565332610172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b84e71c6e2d21%3A0xe17e80792c5276f4!2sBole%20Homes%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1725840455327!5m2!1sen!2set"
+            frameborder="0"
+            style="border: 0; width: 100%; height: 270px; border-radius: 8px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Contact Actions/forms -->
+      <!-- Contact Actions -->
+<div class="col-lg-7">
+  <div class="bg-dark p-4 rounded shadow-sm h-100 d-flex flex-column justify-content-center">
+    <h4 class="text-light mb-4">Get in Touch Instantly</h4>
+
+    <div class="d-flex flex-column gap-3">
+
+      <!-- Email -->
+      <a href="mailto:anwarneja55@gmail.com" class="btn btn-warning btn-lg w-100">
+        <i class="bi bi-envelope me-2"></i> Email Me
+      </a>
+
+      <!-- Phone -->
+      <a href="tel:+251990013445" class="btn btn-outline-light btn-lg w-100">
+        <i class="bi bi-telephone me-2"></i> Call Now
+      </a>
+      <!-- Telegram -->
+<a href="https://t.me/know82" target="_blank" class="btn btn-info btn-lg w-100">
+  <i class="bi bi-telegram me-2"></i> Message on Telegram
+</a>
+
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/251990013445" target="_blank" class="btn btn-success btn-lg w-100">
+        <i class="bi bi-whatsapp me-2"></i> Chat on WhatsApp
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/anwarneja" target="_blank" class="btn btn-dark btn-lg w-100 border-light text-white">
+        <i class="bi bi-github me-2"></i> View GitHub
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/anwar-neja-6a74082bb" target="_blank" class="btn btn-primary btn-lg w-100">
+        <i class="bi bi-linkedin me-2"></i> Connect on LinkedIn
+      </a>
+
+      <!-- CV Download (optional) -->
+      <a href="./new img/Anwar_Neja_CV.pdf" class="btn btn-outline-warning btn-lg w-100" download>
+        <i class="bi bi-file-earmark-arrow-down me-2"></i> Download My CV
+      </a>
+
+    </div>
+  </div>
+</div>
+
+      <!-- End Contact Actions/forms -->
+    </div>
+  </div>
+</section>
+ 
+  <!-- /Contact Section end -->
+
+  <footer  class="footer position-relative dark-background text-light py-4">
+  <div class="container text-center">
+    <div class="copyright mb-2">
+      <p class="mb-0" style="font-size: 0.9rem;">
+        © <span>Copyright</span>
+        <strong class="px-1 sitename">Anwar's Portfolio</strong>
+        <span>All Rights Reserved</span>
+      </p>
+    </div>
+    <div class="credits" style="font-size: 0.85rem;">
+      Designed by <a href="#contact" class="footer-link">Anwar Neja</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  
+
+  .dark-background {
+    background: linear-gradient(135deg, #1c1c1e, #2a2a2d);
+    color: #ddd;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .footer a.footer-link {
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .footer a.footer-link:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+  }
+
+  /* Optional: add a subtle separator line */
+  
+  
+</style>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
